@@ -1,6 +1,6 @@
-# Cronos Knowledge
+# crono Knowledge
 
-**Propósito**: Centralizar el conocimiento y recursos para que **Cronos** ejecute **priorización de tareas** y **estimación de tiempos** de forma consistente, trazable y optimizada según el contexto del usuario o equipo.
+**Propósito**: Centralizar el conocimiento y recursos para que **crono** ejecute **priorización de tareas** y **estimación de tiempos** de forma consistente, trazable y optimizada según el contexto del usuario o equipo.
 
 ## Contenido recomendado
 
@@ -204,7 +204,7 @@ Condiciones medibles y objetivas que determinan si el análisis o la ejecución 
 Tiempo estimado de finalización de una tarea, expresado en horas, días o sprints.
 
 **Esquema de entrada**
-Formato estandarizado en que se entregan los datos a Cronos para su procesamiento (ej. JSON por tarea, lote, texto natural).
+Formato estandarizado en que se entregan los datos a crono para su procesamiento (ej. JSON por tarea, lote, texto natural).
 
 **Esfuerzo**
 Medida de la cantidad de trabajo necesaria para completar una tarea (horas, puntos de historia, días).
