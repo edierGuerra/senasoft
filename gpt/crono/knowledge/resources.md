@@ -22,5 +22,4 @@ Este archivo centraliza enlaces y materiales de apoyo para mejorar la precisión
 - Guarda resúmenes breves (1–2 páginas) por ciclo de priorización, incluyendo criterios aplicados y resultados obtenidos.
 
 ## 4) Integración opcional
-- Si usas MCP/RAG, expón esta carpeta como fuente “confiable” de apoyo.  
-- En caso de conflicto, prevalece el `instructions_crono.md` y la guía interna vigente.
+- En caso de conflicto, prevalece el `instructions_crono.md`
