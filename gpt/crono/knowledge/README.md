@@ -174,7 +174,84 @@ Ejemplo en lenguaje natural:
    Razón: Mejora técnica sin urgencia; esfuerzo 8.
 ```
 ---
-
 ## Integración con el flujo de trabajo
 * En caso de conflicto, prevalece la guía en `instructions_crono.md`.
 * Mantener ejemplos actualizados y métricas de aceptación del modelo.
+
+---
+
+### **Glosario de términos**
+
+**Backlog**
+Lista priorizada de tareas pendientes o funcionalidades por desarrollar, que sirve como fuente principal para seleccionar trabajo en sprints o ciclos.
+
+**Bloquea**
+Indica que una tarea es dependiente para iniciar o completar otra; si no se resuelve, detiene el progreso de una o más tareas.
+
+**Contexto (equipo, proyecto, sprint)**
+Información de referencia sobre quién trabajará (equipo), en qué iniciativa (proyecto) y en qué ciclo de trabajo (sprint) se encuentran.
+
+**Deadlines**
+Fechas límite para entregar o completar una tarea, condicionando su urgencia y prioridad.
+
+**Dependencias**
+Relaciones entre tareas donde una no puede iniciarse o completarse hasta que otra haya finalizado.
+
+**Definición de éxito (criterio observable)**
+Condiciones medibles y objetivas que determinan si el análisis o la ejecución alcanzó el resultado esperado.
+
+**ETA (Estimated Time of Arrival)**
+Tiempo estimado de finalización de una tarea, expresado en horas, días o sprints.
+
+**Esquema de entrada**
+Formato estandarizado en que se entregan los datos a Cronos para su procesamiento (ej. JSON por tarea, lote, texto natural).
+
+**Esfuerzo**
+Medida de la cantidad de trabajo necesaria para completar una tarea (horas, puntos de historia, días).
+
+**Formato de salida**
+Estructura en la que se entregan los resultados al usuario (ej. JSON, resumen ejecutivo, explicación detallada).
+
+**Impacto**
+Nivel de efecto que la tarea tendrá en el producto, negocio o usuarios; puede ser alto, medio o bajo.
+
+**Incendios (modo de ajuste)**
+Prioridad inmediata para incidentes o tareas críticas que requieren atención urgente, normalmente interrumpiendo la planificación.
+
+**Microcopy**
+Texto breve, claro y accionable incluido en la comunicación de resultados para que el usuario entienda rápido la prioridad y la acción requerida.
+
+**Modo de priorización**
+Método elegido para ordenar tareas (ej. *default*, *incendios*, *roadmap*, *throughput*).
+
+**PERT (Program Evaluation and Review Technique)**
+Técnica de estimación que combina tres valores (optimista, probable y pesimista) para calcular tiempos de ejecución más realistas.
+
+**Prioridad**
+Posición relativa de una tarea en la lista ordenada, basada en criterios de impacto, urgencia, esfuerzo y dependencias.
+
+**Roadmap**
+Plan de alto nivel que describe la evolución y entregas de un producto a lo largo del tiempo.
+
+**Score**
+Puntuación calculada para ordenar tareas según un modelo de priorización; integra factores como impacto, urgencia, esfuerzo y riesgo.
+
+**Severidad**
+Medida de la gravedad de un problema o incidencia (ej. S1 crítico, S2 importante, S3 menor).
+
+**Sprint**
+Ciclo de trabajo de duración fija (normalmente 1–4 semanas) en metodologías ágiles donde se ejecuta un conjunto definido de tareas.
+
+**Throughput**
+Velocidad o cantidad de trabajo completado en un periodo dado; usado como referencia para priorización y planificación.
+
+**Trazabilidad**
+Capacidad de rastrear el origen, decisiones y cambios asociados a una tarea o resultado.
+
+**Urgencia**
+Factor que mide qué tan pronto debe completarse una tarea, independientemente de su impacto.
+
+**WSJF (Weighted Shortest Job First) modificado**
+Método de priorización que calcula el valor relativo de las tareas dividiendo su beneficio (impacto, urgencia) entre el esfuerzo requerido, adaptado con ajustes propios para el contexto del equipo.
+
+---
