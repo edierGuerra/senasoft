@@ -10,7 +10,7 @@ Este archivo centraliza enlaces y materiales de apoyo para mejorar la precisión
 - Gestión de dependencias en proyectos ágiles: <https://www.scrum.org/resources/blog/dependency-management-scrum>
 - Estimaciones basadas en datos históricos: <https://www.atlassian.com/agile/project-management/estimation>
 
-## 2) Referencias externas (canónicas)
+## 2) Referencias externas
 - Guía oficial SAFe WSJF: `https://www.scaledagileframework.com/wsjf/`
 - PMI – Guía de buenas prácticas para estimaciones: `https://www.pmi.org/learning/library/estimating-projects-using-historical-data-8406`
 - Scrum Guide (2020): `https://scrumguides.org/`
