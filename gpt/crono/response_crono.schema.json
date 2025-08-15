@@ -6,12 +6,12 @@
     "General": {
       "type": "object",
       "properties": {
-        "nombre_mvp": { "type": "string", "minLength": 1 },
-        "duracion_total": { "type": "string", "minLength": 1 },
+        "nombre_mvp": { "type": "string" },
+        "duracion_total": { "type": "string" },
         "numero_interacciones": { "type": "integer", "minimum": 0 },
         "sentimiento": {
           "type": "string",
-          "enum": ["inseguro", "confiado", "temeroso", "emocionado", "expectante"]
+          "enum": ["", "inseguro", "confiado", "temeroso", "emocionado", "expectante"]
         },
         "pegar_de_internet": { "type": "integer", "minimum": 0, "maximum": 100 }
       }
@@ -25,6 +25,9 @@
         "tiempo_restante_min": { "type": "integer", "minimum": 0 },
         "tiempo_restante_horas": { "type": "number", "minimum": 0 },
 
+        "fecha_limite": { "type": "string", "format": "date-time" },
+        "resumen": { "type": "string" },
+
         "capacidad_equipo": {
           "type": "object",
           "properties": {
@@ -34,8 +37,19 @@
               "type": "object",
               "properties": {
                 "DEV": { "type": "number", "minimum": 0 },
-                "BA": { "type": "number", "minimum": 0 },
-                "QC": { "type": "number", "minimum": 0 }
+                "BA":  { "type": "number", "minimum": 0 },
+                "QC":  { "type": "number", "minimum": 0 }
+              }
+            },
+            "miembros": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "nombre": { "type": "string" },
+                  "rol": { "type": "string", "enum": ["DEV", "BA", "QC"] },
+                  "horas_disponibles": { "type": "number", "minimum": 0 }
+                }
               }
             }
           }
@@ -67,7 +81,7 @@
                           "id": { "type": "string" },
                           "titulo": { "type": "string" },
                           "descripcion": { "type": "string" },
-                          "estimacion_horas": { "type": "number", "minimum": 0 },
+                          "estimacion_horas": { "type": "number", "minimum": 0, "multipleOf": 0.5 },
                           "responsable": { "type": "string", "enum": ["DEV", "BA", "QC"] },
                           "estado": { "type": "string", "enum": ["pendiente", "en_progreso", "bloqueada", "completada"] },
                           "dependencias": { "type": "array", "items": { "type": "string" } }
@@ -122,6 +136,7 @@
             "type": "object",
             "properties": {
               "metodo": { "type": "string", "enum": ["Pomodoro", "Kanban", "Scrum"] },
+              "justificacion": { "type": "string" },
               "configuracion": { "type": "object" }
             }
           }
@@ -151,6 +166,8 @@
             "properties": {
               "tipo": { "type": "string", "enum": ["tarea_critica", "retraso", "capacidad_saturada", "bloqueo"] },
               "detalle": { "type": "string" },
+              "impacto": { "type": "string" },
+              "acciones_recomendadas": { "type": "array", "items": { "type": "string" } },
               "severidad": { "type": "string", "enum": ["alta", "media", "baja"] }
             }
           }
@@ -158,6 +175,7 @@
 
         "proxima_accion": { "type": "string", "minLength": 1 }
       },
+
       "oneOf": [
         { "required": ["tiempo_restante_min"] },
         { "required": ["tiempo_restante_horas"] }

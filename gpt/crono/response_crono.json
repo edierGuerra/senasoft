@@ -9,6 +9,8 @@
   "Especifico": {
     "horizonte": "diario",
     "tiempo_restante_horas": 0,
+    "fecha_limite": "",
+    "resumen": "",
     "capacidad_equipo": {
       "integrantes": 3,
       "horas_disponibles_por_dia": 0,
@@ -16,7 +18,12 @@
         "DEV": 0,
         "BA": 0,
         "QC": 0
-      }
+      },
+      "miembros": [
+        { "nombre": "", "rol": "DEV", "horas_disponibles": 0 },
+        { "nombre": "", "rol": "BA",  "horas_disponibles": 0 },
+        { "nombre": "", "rol": "QC",  "horas_disponibles": 0 }
+      ]
     },
     "plan_de_trabajo": [
       {
@@ -56,9 +63,9 @@
       }
     ],
     "tecnicas_sugeridas": [
-      { "metodo": "Pomodoro", "configuracion": {} },
-      { "metodo": "Kanban", "configuracion": {} },
-      { "metodo": "Scrum", "configuracion": {} }
+      { "metodo": "Pomodoro", "justificacion": "", "configuracion": {} },
+      { "metodo": "Kanban",  "justificacion": "", "configuracion": {} },
+      { "metodo": "Scrum",   "justificacion": "", "configuracion": {} }
     ],
     "progreso": {
       "porcentaje_avance": 0,
@@ -68,7 +75,13 @@
       "riesgo": { "nivel": "bajo", "causas": [] }
     },
     "alertas": [
-      { "tipo": "tarea_critica", "detalle": "", "severidad": "alta" }
+      {
+        "tipo": "tarea_critica",
+        "detalle": "",
+        "impacto": "",
+        "acciones_recomendadas": [],
+        "severidad": "alta"
+      }
     ],
     "proxima_accion": ""
   }
