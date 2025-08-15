@@ -1,0 +1,75 @@
+{
+  "General": {
+    "nombre_mvp": "",
+    "duracion_total": "",
+    "numero_interacciones": 0,
+    "sentimiento": "",
+    "pegar_de_internet": 0
+  },
+  "Especifico": {
+    "horizonte": "diario",
+    "tiempo_restante_horas": 0,
+    "capacidad_equipo": {
+      "integrantes": 3,
+      "horas_disponibles_por_dia": 0,
+      "roles_horas": {
+        "DEV": 0,
+        "BA": 0,
+        "QC": 0
+      }
+    },
+    "plan_de_trabajo": [
+      {
+        "fecha": "",
+        "hitos": [
+          {
+            "id": "",
+            "titulo": "",
+            "fecha_objetivo": "",
+            "prioridad": "media",
+            "tareas": [
+              {
+                "id": "",
+                "titulo": "",
+                "descripcion": "",
+                "estimacion_horas": 0,
+                "responsable": "DEV",
+                "estado": "pendiente",
+                "dependencias": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "recordatorios": [
+      {
+        "trigger": "al_enviar_informe",
+        "criterios": {
+          "deadline_en_min_lte": 0,
+          "prioridades": [],
+          "estados": [],
+          "max_items": 0
+        },
+        "mensajes": [],
+        "siguiente_revision": ""
+      }
+    ],
+    "tecnicas_sugeridas": [
+      { "metodo": "Pomodoro", "configuracion": {} },
+      { "metodo": "Kanban", "configuracion": {} },
+      { "metodo": "Scrum", "configuracion": {} }
+    ],
+    "progreso": {
+      "porcentaje_avance": 0,
+      "tareas_totales": 0,
+      "tareas_pendientes": 0,
+      "hitos_cumplidos": 0,
+      "riesgo": { "nivel": "bajo", "causas": [] }
+    },
+    "alertas": [
+      { "tipo": "tarea_critica", "detalle": "", "severidad": "alta" }
+    ],
+    "proxima_accion": ""
+  }
+}
